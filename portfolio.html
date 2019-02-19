@@ -8,17 +8,33 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <nav class="menu">
-        <ul>
-            <li id="logo">Kevin LeRoy</li>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-    <div class="content">
+    <!-- Navigation -->
+    <!-- need to add a container to hold the nav -->
+    <div class="topNav">
+        <div class="navContainer">
+            <a class="active" href="#home">Kevin LeRoy</a>
+            <div class="topNav-right">
+                <a href="#search">Search</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <div class="container">
         <h1>Portfolio</h1>
         <hr>
+        <div class="row">
+            <div class="column">
+                <img src="assets/images/ggbridge.jpg" alt="alleyway">
+                <img src="assets/images/italy.jpg" alt="cityscape">
+                <img src="assets/images/moscow.jpg" alt="lioness">
+                <img src="assets/images/tornado.jpg" alt="tornado">
+                <img src="assets/images/train.jpg" alt="train">
+            </div>
+        </div>
     </div>
+    <footer>
+        <p>Copyright &copy;</p>
+    </footer>
 </body>
 </html>
