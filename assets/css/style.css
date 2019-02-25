@@ -118,7 +118,7 @@ textarea {
 .text-block {
     position: relative;
     bottom: 80px;
-    width: 240px;
+    /* width: 240px; */
     background-color: #4aaaa5;
     color: #fff;
     text-align: center;
@@ -144,6 +144,10 @@ textarea {
     height: 360px;
 }
 
+.leftCol img:hover {
+    box-shadow: 0 4px 4px #ada8a8; /* goes x-axis, y-axis, blur, (stretch factor on x-axis, not used here), colour */
+}
+
 .rightCol {
     padding-top: 15px;
 }
@@ -151,6 +155,10 @@ textarea {
 .rightCol img {
     width: 240px;
     height: 360px;
+}
+
+.rightCol img:hover {
+    box-shadow: 0 4px 4px #ada8a8; /* goes x-axis, y-axis, blur, (stretch factor on x-axis, not used here), colour */
 }
 
 /* Footer */
