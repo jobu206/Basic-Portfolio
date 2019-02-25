@@ -46,12 +46,13 @@ h1 {
 }
 
 .container {
-    width: 960px;
+    max-width: 960px; 
     margin: 100px auto;
     color: #777;
     padding: 20px 45px 20px 45px;
     background-color: #fff;
     border: 1px solid #ddd;
+    overflow: auto;
 }
 
 hr {
@@ -62,7 +63,7 @@ a~a {
     border-left: 1px solid #ddd;
 }
 
-img {
+img.profile {
     float: left;
     margin-right: 20px;
     margin-top: 10px;
@@ -112,21 +113,47 @@ textarea {
     box-sizing: border-box;
   }
   
-  /* Create two equal columns that sits next to each other */
+/* Create two equal columns that sits next to each other */
   
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
+.text-block {
+    position: relative;
+    bottom: 80px;
+    width: 240px;
+    background-color: #4aaaa5;
+    color: #fff;
+    text-align: center;
+    line-height: 1.75em;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.leftCol {
+    position: relative;
+    float: left;
+    padding-right: 25px;
+    padding-top: 15px;
+}
+
+.rightCol {
+    float: left;
+}
+
+.leftCol img {
     width: 240px;
     height: 360px;
-    vertical-align: middle;
-  }
+}
 
+.rightCol {
+    padding-top: 15px;
+}
+
+.rightCol img {
+    width: 240px;
+    height: 360px;
+}
+
+/* Footer */
 footer {
     position: fixed;
     left: 0;
